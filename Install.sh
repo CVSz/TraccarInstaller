@@ -18,7 +18,7 @@ sudo apt-get -y install mysql-\* mysql-server libaio1 libevent-core-2.0-5 libjso
 sudo mysql_secure_installation
 
 sudo apt-get -y install aptitude git curl wine wine-development innoextract makeself maven 
-sudoapt-get -y install ruby python-software-properties software-properties-common python-xattr
+sudo apt-get -y install ruby python-software-properties software-properties-common python-xattr
 
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get -y update
@@ -31,23 +31,23 @@ cd traccar
 git clone https://github.com/tananaev/traccar-web.git
 sleep 5
 
-echo "Missing ext-6.2.0 (https://www.sencha.com/legal/GPL/)"
+echo "ext-6.2.0 (https://www.sencha.com/legal/GPL/)"
 wget http://cdn.sencha.com/cmd/6.2.0/no-jre/SenchaCmd-6.2.0-linux-amd64.sh.zip
 unzip SenchaCmd-6.2.0-linux-amd64.sh.zip
 ./SenchaCmd-6.2.0.103-linux-amd64.sh
 sleep 5
 
-echo "Missing sencha cmd package (https://www.sencha.com/products/extjs/cmd-download/)"
+echo "sencha cmd package (https://www.sencha.com/products/extjs/cmd-download/)"
 wget http://cdn.sencha.com/ext/gpl/ext-6.2.0-gpl.zip
 unzip -o ext-6.2.0-gpl.zip -d ../../
 sleep 5
 
-echo "Missing yajsw-*.zip (https://sourceforge.net/projects/yajsw/files/)"
+echo "yajsw-*.zip (https://sourceforge.net/projects/yajsw/files/)"
 wget https://sourceforge.net/projects/yajsw/files/latest/download
 mv download traccar/setup/yajsw-beta-12.07.zip
 sleep 5
 
-echo "ls innosetup-*.exe" "Missing isetup-*.exe (http://www.jrsoftware.org/isdl.php)"
+echo "Missing isetup-*.exe (http://www.jrsoftware.org/isdl.php)"
 wget http://www.jrsoftware.org/download.php/is.exe
 mv is.exe traccar/setup/innosetup-5.5.9.exe
 sleep 5
