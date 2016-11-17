@@ -47,7 +47,7 @@ wget https://sourceforge.net/projects/yajsw/files/latest/download
 mv download traccar/setup/yajsw-beta-12.07.zip
 sleep 5
 
-echo "Missing isetup-*.exe (http://www.jrsoftware.org/isdl.php)"
+echo "innosetup-*.exe (http://www.jrsoftware.org/isdl.php)"
 wget http://www.jrsoftware.org/download.php/is.exe
 mv is.exe traccar/setup/innosetup-5.5.9.exe
 sleep 5
